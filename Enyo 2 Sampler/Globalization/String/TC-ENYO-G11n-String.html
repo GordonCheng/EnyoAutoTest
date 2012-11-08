@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://nightly.enyojs.com/" />
+<title>TC-ENYO-G11n-String</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">TC-ENYO-G11n-String</td></tr>
+</thead><tbody>
+<!--TC-ENYO-G11n-String-->
+<!--Author: Sharon Tong-->
+<!--Date: 2012/10/31-->
+<!--Version: 0.1-->
+<!--Purpose: To test the correctness of string based on selected locale-->
+<!--///////////////////////////////////////////////////-->
+<tr>
+	<td>open</td>
+	<td>/latest/sampler/lib/g11n/samples/StringSample.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=stringSample_pickerButton</td>
+	<td></td>
+</tr>
+<!--1. Test when en_ca is picked.-->
+<tr>
+	<td>clickAt</td>
+	<td>css=#stringSample_menuItem2.enyo-tool-decorator</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=stringSample_Box</td>
+	<td>*message*</td>
+</tr>
+<!--2. Test when en_gb is picked.-->
+<tr>
+	<td>clickAt</td>
+	<td>css=#stringSample_menuItem4.enyo-tool-decorator</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=stringSample_Box</td>
+	<td>*message*</td>
+</tr>
+<!--3. Test when fr_fr is picked.-->
+<tr>
+	<td>clickAt</td>
+	<td>css=#stringSample_menuItem7.enyo-tool-decorator</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=stringSample_Box</td>
+	<td>*nouvelle*</td>
+</tr>
+<!--4. Test when it_it is picked.-->
+<tr>
+	<td>clickAt</td>
+	<td>css=#stringSample_menuItem9.enyo-tool-decorator</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=stringSample_Box</td>
+	<td>*messaggio*</td>
+</tr>
+</tbody></table>
+</body>
+</html>

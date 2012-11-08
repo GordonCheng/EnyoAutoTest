@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://nightly.enyojs.com/" />
+<title>TC-ENYO-G11n-Duration</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">TC-ENYO-G11n-Duration</td></tr>
+</thead><tbody>
+<!--TC-ENYO-G11n-Duration-->
+<!--Author: Sharon Tong-->
+<!--Date: 2012/10/31-->
+<!--Version: 0.1-->
+<!--Purpose: To test the correctness of duration format -->
+<!--///////////////////////////////////////////////////-->
+<tr>
+	<td>open</td>
+	<td>/latest/sampler/lib/g11n/samples/DurationSample.html</td>
+	<td></td>
+</tr>
+<!--1. Test the correctness of short format-->
+<tr>
+	<td>verifyText</td>
+	<td>id=durationSample_DurationExample</td>
+	<td>short:&nbsp;&nbsp;&nbsp;1y 2m 3w 27d 8:09:10</td>
+</tr>
+<!--2. Test the correctness of medium format-->
+<tr>
+	<td>verifyText</td>
+	<td>id=durationSample_DurationExample2</td>
+	<td>medium:&nbsp;&nbsp;&nbsp;1 yr 2 mo 3 wk 27 dy 8:09:10</td>
+</tr>
+<!--3. Test the correctness of  long format-->
+<tr>
+	<td>verifyText</td>
+	<td>id=durationSample_DurationExample3</td>
+	<td>long:&nbsp;&nbsp;&nbsp;1 yr 2 mos 3 wks 27 dys 8 hrs 9 min 10 sec</td>
+</tr>
+</tbody></table>
+</body>
+</html>

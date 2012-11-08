@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://nightly.enyojs.com/" />
+<title>TC-ENYO-G11n-Phone</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">TC-ENYO-G11n-Phone</td></tr>
+</thead><tbody>
+<!--TC-ENYO-G11n-Phone-->
+<!--Author: Sharon Tong-->
+<!--Date: 2012/10/30-->
+<!--Version: 0.1-->
+<!--Purpose: To test the number formats are correct-->
+<!--///////////////////////////////////////////////////-->
+<tr>
+	<td>open</td>
+	<td>/latest/sampler/lib/g11n/samples/PhoneSample.html</td>
+	<td></td>
+</tr>
+<!--1. Type in 011862168895162 for test-->
+<tr>
+	<td>type</td>
+	<td>id=phoneSample_numberInput</td>
+	<td>011862168895162</td>
+</tr>
+<tr>
+	<td>runScript</td>
+	<td>window.document.getElementById('phoneSample_numberInput').oninput = window.enyo.dispatch</td>
+	<td></td>
+</tr>
+<tr>
+	<td>fireEvent</td>
+	<td>phoneSample_numberInput</td>
+	<td>input</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=phoneSample_formattedNumber</td>
+	<td>Formatted Number = 011 86 21 68895162</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=phoneSample_areaCode</td>
+	<td>Area Code = 21</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=phoneSample_subscriberNumber</td>
+	<td>Subscriber Number = 68895162</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=phoneSample_locale</td>
+	<td>Locale = en_us</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=phoneSample_location</td>
+	<td>Area = Shanghai 上海市</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=phoneSample_country</td>
+	<td>Country = China</td>
+</tr>
+<!--2. Type in 14086170000 for test-->
+<tr>
+	<td>type</td>
+	<td>id=phoneSample_numberInput</td>
+	<td>14086170000</td>
+</tr>
+<tr>
+	<td>runScript</td>
+	<td>window.document.getElementById('phoneSample_numberInput').oninput = window.enyo.dispatch</td>
+	<td></td>
+</tr>
+<tr>
+	<td>fireEvent</td>
+	<td>phoneSample_numberInput</td>
+	<td>input</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=phoneSample_formattedNumber</td>
+	<td>Formatted Number = 1 (408) 617-0000</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=phoneSample_areaCode</td>
+	<td>Area Code = 408</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=phoneSample_subscriberNumber</td>
+	<td>Subscriber Number = 6170000</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=phoneSample_locale</td>
+	<td>Locale = en_us</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=phoneSample_location</td>
+	<td>Area = Central California: San Jose, Los Gatos, Milpitas, Sunnyvale, Cupertino, Gilroy</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=phoneSample_country</td>
+	<td>Country = North America</td>
+</tr>
+<!--3. Type in 143812345678 for test-->
+<tr>
+	<td>type</td>
+	<td>id=phoneSample_numberInput</td>
+	<td>143812345678</td>
+</tr>
+<tr>
+	<td>runScript</td>
+	<td>window.document.getElementById('phoneSample_numberInput').oninput = window.enyo.dispatch</td>
+	<td></td>
+</tr>
+<tr>
+	<td>fireEvent</td>
+	<td>phoneSample_numberInput</td>
+	<td>input</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=phoneSample_formattedNumber</td>
+	<td>Formatted Number = 143812345678</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=phoneSample_areaCode</td>
+	<td>Area Code = 438</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=phoneSample_subscriberNumber</td>
+	<td>Subscriber Number = 12345678</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=phoneSample_locale</td>
+	<td>Locale = en_us</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=phoneSample_location</td>
+	<td>Area = Quebec, Canada</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=phoneSample_country</td>
+	<td>Country = North America</td>
+</tr>
+</tbody></table>
+</body>
+</html>

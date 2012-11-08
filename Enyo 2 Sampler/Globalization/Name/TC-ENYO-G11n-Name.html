@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://nightly.enyojs.com/" />
+<title>TC-ENYO-G11n-Name</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">TC-ENYO-G11n-Name</td></tr>
+</thead><tbody>
+<!--TC-ENYO-G11n-Name-->
+<!--Author: Sharon Tong-->
+<!--Date: 2012/11/05-->
+<!--Version: 0.1-->
+<!--Purpose: To test the name is correctly populated.-->
+<!--///////////////////////////////////////////////////-->
+<!--1. Type in Robert James Frank for test-->
+<tr>
+	<td>open</td>
+	<td>/latest/sampler/lib/g11n/samples/NameSample.html</td>
+	<td></td>
+</tr>
+<!--1. Type in the test name "Robert James Frank"-->
+<tr>
+	<td>type</td>
+	<td>id=nameSample_numberInput</td>
+	<td>Robert James Frank</td>
+</tr>
+<tr>
+	<td>runScript</td>
+	<td>window.document.getElementById('nameSample_numberInput').oninput = window.enyo.dispatch</td>
+	<td></td>
+</tr>
+<tr>
+	<td>fireEvent</td>
+	<td>id=nameSample_numberInput</td>
+	<td>input</td>
+</tr>
+<!--2. To check if the Given name, Middle name, Family name are populated correctly.-->
+<tr>
+	<td>verifyText</td>
+	<td>id=nameSample_givenName</td>
+	<td>Given Name = Robert</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=nameSample_middleName</td>
+	<td>Middle Name = James</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=nameSample_familyName</td>
+	<td>Family Name = Frank</td>
+</tr>
+</tbody></table>
+</body>
+</html>

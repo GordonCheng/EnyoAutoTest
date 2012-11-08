@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://nightly.enyojs.com/" />
+<title>TC-ENYO-Enyo Core-Platform</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">TC-ENYO-Enyo Core-Platform</td></tr>
+</thead><tbody>
+<!--TC-ENYO-Enyo Core-Platform-->
+<!--Author: Sharon Tong-->
+<!--Date: 2012/10/31-->
+<!--Version: 0.1-->
+<!--Purpose: To test if the platform shows right-->
+<!--///////////////////////////////////////////////////-->
+<tr>
+	<td>open</td>
+	<td>/latest/sampler/build/samples/PlatformSample.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=platformSample_uaString</td>
+	<td>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:16.0) Gecko/20100101 Firefox/16.0</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=platformSample_enyoPlatformJSON</td>
+	<td>{&quot;touch&quot;:false,&quot;gesture&quot;:false,&quot;firefox&quot;:16}</td>
+</tr>
+</tbody></table>
+</body>
+</html>

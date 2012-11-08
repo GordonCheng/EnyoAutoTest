@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://nightly.enyojs.com/" />
+<title>TC-ENYO-G11n-Number</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">TC-ENYO-G11n-Number</td></tr>
+</thead><tbody>
+<!--TC-ENYO-G11n-Number-->
+<!--Author: Sharon Tong-->
+<!--Date: 2012/10/30-->
+<!--Version: 0.1-->
+<!--Purpose: To test the number formats are correct-->
+<!--///////////////////////////////////////////////////-->
+<tr>
+	<td>open</td>
+	<td>/latest/sampler/lib/g11n/samples/NumberSample.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=numberSample_pickerButton</td>
+	<td></td>
+</tr>
+<!--1. Pick en_ca to test-->
+<tr>
+	<td>clickAt</td>
+	<td>css=#numberSample_menuItem2.enyo-tool-decorator</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=numberSample_NumberExample</td>
+	<td>33333.3 in en_ca = 33,333.3</td>
+</tr>
+<!--2.Pick en_gb to test-->
+<tr>
+	<td>clickAt</td>
+	<td>css=#numberSample_menuItem4.enyo-tool-decorator</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=numberSample_NumberExample</td>
+	<td>33333.3 in en_gb = 33,333.3</td>
+</tr>
+<!--3.Pick fr_fr to test-->
+<tr>
+	<td>clickAt</td>
+	<td>css=#numberSample_menuItem7.enyo-tool-decorator</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=numberSample_NumberExample</td>
+	<td>33333.3 in fr_fr = 33 333,3</td>
+</tr>
+</tbody></table>
+</body>
+</html>

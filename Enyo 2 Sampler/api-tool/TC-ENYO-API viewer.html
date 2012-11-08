@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://nightly.enyojs.com/" />
+<title>TC-ENYO-API viewer</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">TC-ENYO-API viewer</td></tr>
+</thead><tbody>
+<!--TC-ENYO-API viewer-->
+<!--Author: Sharon Tong-->
+<!--Date: 2012/11/06-->
+<!--Version: 0.1-->
+<!--Purpose: To test the correctness of API viewer-->
+<!--///////////////////////////////////////////////////-->
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<!--1. Go to the /api-tool link-->
+<tr>
+	<td>clickAtAndWait</td>
+	<td>link=latest/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAtAndWait</td>
+	<td>link=api-tool/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>60000</td>
+	<td></td>
+</tr>
+<!--2. Verify the menu on top of the page-->
+<tr>
+	<td>verifyText</td>
+	<td>id=app_left_button</td>
+	<td>Kinds</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=app_left_button2</td>
+	<td>Modules</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=app_left_button3</td>
+	<td>Index</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=app_left_button4</td>
+	<td>Packages</td>
+</tr>
+<!--3. Check the links under "Kinds"-->
+<!--3.1 Click the link "enyo.Ajax" and verify the content-->
+<tr>
+	<td>clickAt</td>
+	<td>id=app_left_button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>link=enyo.Ajax</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=app_header</td>
+	<td>enyoenyo.Ajaxenyo.Ajax :: enyo.Async :: enyo.Object</td>
+</tr>
+<!--3.2 Click the link "enyo.BaseLayout" and verify the content-->
+<tr>
+	<td>clickAt</td>
+	<td>link=enyo.BaseLayout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=app_header</td>
+	<td>enyoenyo.BaseLayoutenyo.BaseLayout :: enyo.Layout</td>
+</tr>
+<!--3.3 Click the link "enyo.Checkbox" and verify the content-->
+<tr>
+	<td>clickAt</td>
+	<td>link=enyo.Checkbox</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=app_header</td>
+	<td>enyoenyo.Checkboxenyo.Checkbox :: enyo.Input :: enyo.Control :: enyo.UiComponent :: enyo.Component :: enyo.Object</td>
+</tr>
+<!--3.4 Click the link "onyx.Button" and verify the content-->
+<tr>
+	<td>clickAt</td>
+	<td>link=onyx.Button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=app_header</td>
+	<td>*enyo.Button*</td>
+</tr>
+<!--3.5 Click the link "onyx.PickerButton" and verify the content-->
+<tr>
+	<td>clickAt</td>
+	<td>link=onyx.PickerButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=app_header</td>
+	<td>*onyx.PickerButton*</td>
+</tr>
+<!--4. Check the links under "Modules"-->
+<tr>
+	<td>clickAt</td>
+	<td>id=app_left_button2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<!--4.1 Click the link "Canvas.js" and verify the content-->
+<tr>
+	<td>clickAt</td>
+	<td>link=Canvas.js</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=app_header</td>
+	<td>*Canvas.js*</td>
+</tr>
+<!--4.2. Click the link "Menu.js" and verify the content-->
+<tr>
+	<td>clickAt</td>
+	<td>link=Menu.js</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=app_header</td>
+	<td>*Menu.js*</td>
+</tr>
+<!--5. Check the links under "Index"-->
+<tr>
+	<td>clickAt</td>
+	<td>id=app_left_button3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<!--5.1 Click the link "enyo.ImageView::animate" -->
+<tr>
+	<td>clickAt</td>
+	<td>link=enyo.ImageView::animate</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=app_header</td>
+	<td>*ImageView*</td>
+</tr>
+<!--5.1 Click the link "enyo.ScrollMath::bottomBountary"-->
+<tr>
+	<td>clickAt</td>
+	<td>link=enyo.ScrollMath::bottomBoundary</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=app_header</td>
+	<td>*ScrollMath*</td>
+</tr>
+<!--5.2 Click the link "enyo.Option"-->
+<tr>
+	<td>clickAt</td>
+	<td>link=enyo.Option</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=app_header</td>
+	<td>*enyo.Option*</td>
+</tr>
+<!---->
+</tbody></table>
+</body>
+</html>
