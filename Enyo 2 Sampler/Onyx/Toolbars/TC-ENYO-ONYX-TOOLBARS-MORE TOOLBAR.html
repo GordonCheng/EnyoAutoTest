@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://nightly.enyojs.com/" />
+<title>TC-ENYO-ONYX-TOOLBARS-MORE TOOLBAR</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">TC-ENYO-ONYX-TOOLBARS-MORE TOOLBAR</td></tr>
+</thead><tbody>
+<!--Name: TC-ENYO-ONYX-TOOLBARS-SCROLLING TOOLBAR-->
+<!--Version: 0.1 Author: Gordon Cheng-->
+<!--Date: 11/05/2012-->
+<!--Purpose: Test all the "MORE TOOLBAR" controls-->
+<!--//////////////////////////////////////////////-->
+<tr>
+	<td>open</td>
+	<td>/latest/sampler/lib/onyx/samples/ToolbarSample.html</td>
+	<td></td>
+</tr>
+<!--1. Title & Header: Title is automatically converted to upper cases.-->
+<tr>
+	<td>verifyEval</td>
+	<td>var content = window.document.getElementById('toolbarSample_control10').textContent; content.toUpperCase();</td>
+	<td>MORE TOOLBAR</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=toolbarSample_control11</td>
+	<td>Header</td>
+</tr>
+<!--2. Button-->
+<tr>
+	<td>click</td>
+	<td>id=toolbarSample_button13</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=toolbarSample_button13</td>
+	<td>Button</td>
+</tr>
+<!--3. Down-->
+<tr>
+	<td>click</td>
+	<td>id=toolbarSample_button14</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=toolbarSample_button14</td>
+	<td>Down</td>
+</tr>
+<!--4. Button-->
+<tr>
+	<td>click</td>
+	<td>id=toolbarSample_button15</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=toolbarSample_button15</td>
+	<td>Button</td>
+</tr>
+<!--5. input field1-->
+<tr>
+	<td>type</td>
+	<td>id=toolbarSample_input5</td>
+	<td>aaa</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=toolbarSample_input5</td>
+	<td>aaa</td>
+</tr>
+<!--6. Right-->
+<tr>
+	<td>click</td>
+	<td>id=toolbarSample_button16</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=toolbarSample_button16</td>
+	<td>Right</td>
+</tr>
+<!--7. input field2-->
+<tr>
+	<td>type</td>
+	<td>id=toolbarSample_input6</td>
+	<td>bbb</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=toolbarSample_input6</td>
+	<td>bbb</td>
+</tr>
+<!--8. More Right-->
+<tr>
+	<td>click</td>
+	<td>id=toolbarSample_button17</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=toolbarSample_button17</td>
+	<td>More Right</td>
+</tr>
+<!--9. There's more-->
+<tr>
+	<td>verifyText</td>
+	<td>id=toolbarSample_control12</td>
+	<td>There's more</td>
+</tr>
+<!--10. Far Right-->
+<tr>
+	<td>click</td>
+	<td>id=toolbarSample_button18</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=toolbarSample_button18</td>
+	<td>Far Right</td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

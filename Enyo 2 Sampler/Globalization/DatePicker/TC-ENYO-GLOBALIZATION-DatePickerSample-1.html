@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://nightly.enyojs.com/" />
+<title>TC-ENYO-ONYX-DatePickerSample</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">TC-ENYO-ONYX-DatePickerSample</td></tr>
+</thead><tbody>
+<!--TC-ENYO-GLOBALIZATION-DatePickerSample-1-->
+<!--Author: Gordon Cheng-->
+<!--Date: 2012/10/25-->
+<!--Version: 0.1-->
+<!--Purpose: Choose and test all DatePickers for "en_us" locale-->
+<!--///////////////////////////////////////////////////-->
+<tr>
+	<td>open</td>
+	<td>/latest/sampler/lib/onyx/samples/DatePickerSample.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=datePickerSample_pickerButton</td>
+	<td></td>
+</tr>
+<!--1. Test "DATE" pickers-->
+<tr>
+	<td>clickAt</td>
+	<td>css=#datePickerSample_menuItem2.enyo-tool-decorator</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>css=#datePickerSample_menuItem.enyo-tool-decorator</td>
+	<td></td>
+</tr>
+<!--1.1 click "Get Dates"-->
+<tr>
+	<td>clickAt</td>
+	<td>id=datePickerSample_button</td>
+	<td></td>
+</tr>
+<!--1.1.1 Verify the consistence between "DATE" pickers with the  "VALUE" field below-->
+<tr>
+	<td>storeText</td>
+	<td>css=#datePickerSample_datePicker1_monthPickerButton.enyo-tool-decorator</td>
+	<td>varMonth1</td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>css=#datePickerSample_datePicker1_dayPickerButton.enyo-tool-decorator</td>
+	<td>varDay1</td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>css=#datePickerSample_datePicker1_yearPickerButton.enyo-tool-decorator</td>
+	<td>varYear1</td>
+</tr>
+<!--1.1.2 Compare the result. Should fail here cause didn't conver the "Month" string to numbers-->
+<tr>
+	<td>verifyText</td>
+	<td>css=#datePickerSample_datePicker1Value</td>
+	<td>${varMonth1}/${varDay1}/${varYear1}</td>
+</tr>
+<!--1.2 Change DATE-->
+<!--1.2.1 Change month to "Dec"-->
+<tr>
+	<td>clickAt</td>
+	<td>id=datePickerSample_datePicker1_monthPickerButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>css=#datePickerSample_datePicker1_monthPicker_menuItem12.enyo-tool-decorator</td>
+	<td></td>
+</tr>
+<!--1.2.2 Change day to "31"-->
+<tr>
+	<td>clickAt</td>
+	<td>id=datePickerSample_datePicker1_dayPickerButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>css=#datePickerSample_datePicker1_dayPicker_menuItem31.enyo-tool-decorator</td>
+	<td></td>
+</tr>
+<!--1.2.3 Change year to "2020"-->
+<tr>
+	<td>clickAt</td>
+	<td>id=datePickerSample_datePicker1_yearPickerButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>css=#datePickerSample_datePicker1_year.enyo-tool-decorator</td>
+	<td></td>
+</tr>
+<!--1.2.4 Verify the "VALUE" is displayed as 31/12/00-->
+<tr>
+	<td>verifyText</td>
+	<td>css=#datePickerSample_datePicker1Value</td>
+	<td>12/31/00</td>
+</tr>
+<!--1.3 Reset Dates-->
+<tr>
+	<td>clickAt</td>
+	<td>id=datePickerSample_button2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#datePickerSample_datePicker1_monthPickerButton.enyo-tool-decorator</td>
+	<td>${varMonth1}</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#datePickerSample_datePicker1_dayPickerButton.enyo-tool-decorator</td>
+	<td>${varDay1}</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#datePickerSample_datePicker1_yearPickerButton.enyo-tool-decorator</td>
+	<td>${varYear1}</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#datePickerSample_datePicker1Value</td>
+	<td>${varMonth1}/${varDay1}/${varYear1}</td>
+</tr>
+<!--\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+<!--2. Repeat section 1 steps for "DATE W/MIN & MAX YEARS" pickers-->
+<!--2.1 click "Get Dates"-->
+<tr>
+	<td>clickAt</td>
+	<td>id=datePickerSample_button</td>
+	<td></td>
+</tr>
+<!--2.1.1 Verify the consistence between "DATE" pickers with the  "VALUE" field below-->
+<tr>
+	<td>storeText</td>
+	<td>css=#datePickerSample_datePicker2_monthPickerButton.enyo-tool-decorator</td>
+	<td>varMonth2</td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>css=#datePickerSample_datePicker2_dayPickerButton.enyo-tool-decorator</td>
+	<td>varDay2</td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>css=#datePickerSample_datePicker2_yearPickerButton.enyo-tool-decorator</td>
+	<td>varYear2</td>
+</tr>
+<!--1.1.2 Compare the result. Should fail here cause didn't conver the "Month" string to numbers-->
+<tr>
+	<td>verifyText</td>
+	<td>css=#datePickerSample_datePicker2Value</td>
+	<td>${varMonth2}/${varDay2}/${varYear2}</td>
+</tr>
+<!--2.2 Change DATE-->
+<!--2.2.1 Change month to "Dec"-->
+<tr>
+	<td>clickAt</td>
+	<td>id=datePickerSample_datePicker2_monthPickerButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>css=#datePickerSample_datePicker2_monthPicker_menuItem12.enyo-tool-decorator</td>
+	<td></td>
+</tr>
+<!--2.2.2 Change day to "31"-->
+<tr>
+	<td>clickAt</td>
+	<td>id=datePickerSample_datePicker2_dayPickerButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>css=#datePickerSample_datePicker2_dayPicker_menuItem31.enyo-tool-decorator</td>
+	<td></td>
+</tr>
+<!--2.2.3 Change year to "1900"-->
+<tr>
+	<td>clickAt</td>
+	<td>id=datePickerSample_datePicker2_yearPickerButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>css=#datePickerSample_datePicker2_year.enyo-tool-decorator</td>
+	<td></td>
+</tr>
+<!--2.2.4 Verify the "VALUE" is displayed as 31/12/00-->
+<tr>
+	<td>verifyText</td>
+	<td>css=#datePickerSample_datePicker2Value</td>
+	<td>12/31/10</td>
+</tr>
+<!--2.3 Reset Dates-->
+<tr>
+	<td>clickAt</td>
+	<td>id=datePickerSample_button2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#datePickerSample_datePicker2_monthPickerButton.enyo-tool-decorator</td>
+	<td>${varMonth2}</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#datePickerSample_datePicker2_dayPickerButton.enyo-tool-decorator</td>
+	<td>${varDay2}</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#datePickerSample_datePicker2_yearPickerButton.enyo-tool-decorator</td>
+	<td>${varYear2}</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#datePickerSample_datePicker2Value</td>
+	<td>${varMonth2}/${varDay2}/${varYear2}</td>
+</tr>
+<!--/////////////////////////////////////////////////////////////-->
+<!--3. Repeat section 1 steps for "DATE W/DAYS HIDDEN" pickers-->
+<!--3.1 click "Get Dates"-->
+<tr>
+	<td>clickAt</td>
+	<td>id=datePickerSample_button</td>
+	<td></td>
+</tr>
+<!--3.1.1 Verify the consistence between "DATE" pickers with the  "VALUE" field below-->
+<tr>
+	<td>storeText</td>
+	<td>css=#datePickerSample_datePicker3_monthPickerButton.enyo-tool-decorator</td>
+	<td>varMonth3</td>
+</tr>
+<!--No day picker to be stored-->
+<tr>
+	<td>storeText</td>
+	<td>css=#datePickerSample_datePicker3_yearPickerButton.enyo-tool-decorator</td>
+	<td>varYear3</td>
+</tr>
+<!--Verify the day picker is not present-->
+<tr>
+	<td>verifyNotText</td>
+	<td>css=#datePickerSample_datePicker3_dayPickerButton.enyo-tool-decorator</td>
+	<td></td>
+</tr>
+<!--3.1.2 Compare the result. Should fail here cause didn't conver the "Month" string to numbers-->
+<tr>
+	<td>verifyText</td>
+	<td>css=#datePickerSample_datePicker3Value</td>
+	<td>${varMonth3}/${varYear3}</td>
+</tr>
+<!--3.2 Change DATE-->
+<!--3.2.1 Change month to "Dec"-->
+<tr>
+	<td>clickAt</td>
+	<td>id=datePickerSample_datePicker3_monthPickerButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>css=#datePickerSample_datePicker3_monthPicker_menuItem12.enyo-tool-decorator</td>
+	<td></td>
+</tr>
+<!--3.2.2 No day to change here.-->
+<!--3.2.3 Change year to "1900"-->
+<tr>
+	<td>clickAt</td>
+	<td>id=datePickerSample_datePicker3_yearPickerButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>css=#datePickerSample_datePicker3_year.enyo-tool-decorator</td>
+	<td></td>
+</tr>
+<!--3.2.4 Verify the "VALUE" is displayed as 12/00-->
+<tr>
+	<td>verifyText</td>
+	<td>css=#datePickerSample_datePicker3Value</td>
+	<td>12/00</td>
+</tr>
+<!--2.3 Reset Dates-->
+<tr>
+	<td>clickAt</td>
+	<td>id=datePickerSample_button2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#datePickerSample_datePicker3_monthPickerButton.enyo-tool-decorator</td>
+	<td>${varMonth3}</td>
+</tr>
+<!--No verification for day picker here-->
+<tr>
+	<td>verifyText</td>
+	<td>css=#datePickerSample_datePicker3_yearPickerButton.enyo-tool-decorator</td>
+	<td>${varYear3}</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#datePickerSample_datePicker3Value</td>
+	<td>${varMonth3}/${varYear3}</td>
+</tr>
+<!--\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+<!--4. Check "DISABLED" pickers-->
+<!--4.1 Check value of day picker-->
+<tr>
+	<td>verifyText</td>
+	<td>css=#datePickerSample_datePicker4_dayPickerButton.enyo-tool-decorator</td>
+	<td>${varDay2}</td>
+</tr>
+<!--4.2 Check value of month picker-->
+<tr>
+	<td>verifyText</td>
+	<td>css=#datePickerSample_datePicker4_monthPickerButton.enyo-tool-decorator</td>
+	<td>${varMonth2}</td>
+</tr>
+<!--4.3 Check value of year picker-->
+<tr>
+	<td>verifyText</td>
+	<td>css=#datePickerSample_datePicker4_yearPickerButton.enyo-tool-decorator</td>
+	<td>${varYear2}</td>
+</tr>
+<!--4.4 Verify the day picker is display only-->
+<tr>
+	<td>verifyNotEditable</td>
+	<td>css=#datePickerSample_datePicker4_dayPickerButton.enyo-tool-decorator</td>
+	<td></td>
+</tr>
+<!--4.5 Verify the month picker is display only-->
+<tr>
+	<td>verifyNotEditable</td>
+	<td>css=#datePickerSample_datePicker4_monthPickerButton.enyo-tool-decorator</td>
+	<td></td>
+</tr>
+<!--4.6 Verify the year picker is display only-->
+<tr>
+	<td>verifyNotEditable</td>
+	<td>css=#datePickerSample_datePicker4_yearPickerButton.enyo-tool-decorator</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

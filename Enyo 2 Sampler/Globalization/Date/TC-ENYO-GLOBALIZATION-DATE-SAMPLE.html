@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://nightly.enyojs.com/" />
+<title>TC-ENYO-GLOBALIZATION-DATE-SAMPLE</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">TC-ENYO-GLOBALIZATION-DATE-SAMPLE</td></tr>
+</thead><tbody>
+<!--TC-ENYO-GLOBALIZATION-DATE-SAMPLE-->
+<!--Author: Gordon Cheng-->
+<!--Date: 10/30/2012-->
+<!--Version: 0.1-->
+<!--Purpose: Test Date-->
+<!--///////////////////////////////////////////////////////-->
+<tr>
+	<td>open</td>
+	<td>/latest/sampler/lib/g11n/samples/DateSample.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=dateSample_pickerButton</td>
+	<td></td>
+</tr>
+<!--1. "en_ca"-->
+<tr>
+	<td>clickAt</td>
+	<td>css=div#dateSample_menuItem2.enyo-tool-decorator</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>var myDate = new Date(); var newDate=&quot;&quot;; newDate.concat(myDate.getDate(), &quot;/&quot;, myDate.getMonth()+1, &quot;/&quot;, myDate.getYear()-100, &quot; &quot;, myDate.toLocaleTimeString().substring(0,4), myDate.toLocaleTimeString().substring(7,10));</td>
+	<td>en_caDate</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div#dateSample_dateExample</td>
+	<td>Current date in en_ca = ${en_caDate}</td>
+</tr>
+<!--2. "en_ie"-->
+<tr>
+	<td>clickAt</td>
+	<td>css=div#dateSample_menuItem3.enyo-tool-decorator</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>var myDate = new Date(); var newDate=&quot;&quot;; newDate.concat(myDate.getDate(), &quot;/&quot;, myDate.getMonth()+1, &quot;/&quot;, myDate.getFullYear(), &quot; &quot;, myDate.toTimeString().substring(0,5));</td>
+	<td>en_ieDate</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div#dateSample_dateExample</td>
+	<td>Current date in en_ie = ${en_ieDate}</td>
+</tr>
+<!--3. "en_gb"-->
+<tr>
+	<td>clickAt</td>
+	<td>css=div#dateSample_menuItem4.enyo-tool-decorator</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>var myDate = new Date(); var newDate=&quot;&quot;; newDate.concat(myDate.getDate(), &quot;/&quot;, myDate.getMonth()+1, &quot;/&quot;, myDate.getFullYear(), &quot; &quot;, myDate.toTimeString().substring(0,5));</td>
+	<td>en_gbDate</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div#dateSample_dateExample</td>
+	<td>Current date in en_gb = ${en_gbDate}</td>
+</tr>
+<!--4. "en_mx"-->
+<tr>
+	<td>clickAt</td>
+	<td>css=div#dateSample_menuItem5.enyo-tool-decorator</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>var myDate = new Date(); var newDate=&quot;&quot;; newDate.concat(myDate.getDate(), &quot;/&quot;, myDate.getMonth()+1, &quot;/&quot;, myDate.getYear()-100, &quot; &quot;, myDate.toLocaleTimeString().substring(0,4), myDate.toLocaleTimeString().substring(7,10));</td>
+	<td>en_mxDate</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div#dateSample_dateExample</td>
+	<td>Current date in en_mx = ${en_mxDate}</td>
+</tr>
+<!--5. "de_de"-->
+<tr>
+	<td>clickAt</td>
+	<td>css=div#dateSample_menuItem6.enyo-tool-decorator</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>var myDate = new Date(); var newDate=&quot;&quot;; newDate.concat(myDate.getDate(), &quot;.&quot;, myDate.getMonth()+1, &quot;.&quot;, myDate.getYear()-100, &quot; &quot;, myDate.toTimeString().substring(0,5));</td>
+	<td>de_deDate</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div#dateSample_dateExample</td>
+	<td>Current date in de_de = ${de_deDate}</td>
+</tr>
+<!--6. "fr_fr"-->
+<tr>
+	<td>clickAt</td>
+	<td>css=div#dateSample_menuItem7.enyo-tool-decorator</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>var myDate = new Date(); var newDate=&quot;&quot;; newDate.concat(myDate.getDate(), &quot;/&quot;, myDate.getMonth()+1, &quot;/&quot;, myDate.getYear()-100, &quot; &quot;, myDate.toTimeString().substring(0,5));</td>
+	<td>fr_frDate</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div#dateSample_dateExample</td>
+	<td>Current date in fr_fr = ${fr_frDate}</td>
+</tr>
+<!--7. "fr_ca"-->
+<tr>
+	<td>clickAt</td>
+	<td>css=div#dateSample_menuItem8.enyo-tool-decorator</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>var myDate = new Date(); var newDate=&quot;&quot;; newDate.concat(myDate.getDate(), &quot;/&quot;, myDate.getMonth()+1, &quot;/&quot;, myDate.getYear()-100, &quot; &quot;, myDate.toTimeString().substring(0,5));</td>
+	<td>fr_caDate</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div#dateSample_dateExample</td>
+	<td>Current date in fr_ca = ${fr_caDate}</td>
+</tr>
+<!--8. "it_it"-->
+<tr>
+	<td>clickAt</td>
+	<td>css=div#dateSample_menuItem9.enyo-tool-decorator</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>var myDate = new Date(); var newDate=&quot;&quot;; newDate.concat(myDate.getDate(), &quot;/&quot;, myDate.getMonth()+1, &quot;/&quot;, myDate.getYear()-100, &quot; &quot;, myDate.toTimeString().substring(0,2), &quot;.&quot;, myDate.toLocaleTimeString().substring(2,4));</td>
+	<td>it_itDate</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div#dateSample_dateExample</td>
+	<td>Current date in it_it = ${it_itDate}</td>
+</tr>
+<!--9. "es_es"-->
+<tr>
+	<td>clickAt</td>
+	<td>css=div#dateSample_menuItem10.enyo-tool-decorator</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>var myDate = new Date(); var newDate=&quot;&quot;; newDate.concat(myDate.getDate(), &quot;/&quot;, myDate.getMonth()+1, &quot;/&quot;, myDate.getYear()-100, &quot; &quot;, myDate.toTimeString().substring(0,5));</td>
+	<td>es_esDate</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div#dateSample_dateExample</td>
+	<td>Current date in es_es = ${es_esDate}</td>
+</tr>
+<!--10. "es_mx"-->
+<tr>
+	<td>clickAt</td>
+	<td>css=div#dateSample_menuItem11.enyo-tool-decorator</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>var myDate = new Date(); var newDate=&quot;&quot;; newDate.concat(myDate.getDate(), &quot;/&quot;, myDate.getMonth()+1, &quot;/&quot;, myDate.getYear()-100, &quot; &quot;, myDate.toLocaleTimeString().substring(0,4), &quot; &quot;, myDate.toLocaleTimeString().charAt(8).toLowerCase(),&quot;.m.&quot;);</td>
+	<td>es_mxDate</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div#dateSample_dateExample</td>
+	<td>Current date in es_mx = ${es_mxDate}</td>
+</tr>
+<!--11. "es_us"-->
+<tr>
+	<td>clickAt</td>
+	<td>css=div#dateSample_menuItem12.enyo-tool-decorator</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>var myDate = new Date(); var newDate=&quot;&quot;; newDate.concat(myDate.getMonth()+1, &quot;/&quot;, myDate.getDate(), &quot;/&quot;, myDate.getYear()-100, &quot; &quot;, myDate.toLocaleTimeString().substring(0,4), myDate.toLocaleTimeString().substring(7,10));</td>
+	<td>es_usDate</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div#dateSample_dateExample</td>
+	<td>Current date in es_us = ${es_usDate}</td>
+</tr>
+<!--12. "en_us"-->
+<tr>
+	<td>clickAt</td>
+	<td>css=div#dateSample_menuItem.enyo-tool-decorator</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>var myDate = new Date(); var newDate=&quot;&quot;; newDate.concat(myDate.getMonth()+1, &quot;/&quot;, myDate.getDate(), &quot;/&quot;, myDate.getYear()-100, &quot; &quot;, myDate.toLocaleTimeString().substring(0,4), myDate.toLocaleTimeString().substring(7,10));</td>
+	<td>en_usDate</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div#dateSample_dateExample</td>
+	<td>Current date in en_us = ${en_usDate}</td>
+</tr>
+</tbody></table>
+</body>
+</html>

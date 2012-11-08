@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://nightly.enyojs.com/" />
+<title>TC-ENYO-ONYX-TimePickerSample-5</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">TC-ENYO-ONYX-TimePickerSample-5</td></tr>
+</thead><tbody>
+<!--TC-ENYO-GLOBALIZATION-TimePickerSample-5-->
+<!--Author: Gordon Cheng-->
+<!--Date: 10/26/2012-->
+<!--Version: 0.1-->
+<!--Purpose: Test timepicker for "en_mx" locale-->
+<!--///////////////////////////////////////////////////////-->
+<tr>
+	<td>open</td>
+	<td>/latest/sampler/lib/onyx/samples/TimePickerSample.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=timePickerSample_pickerButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>css=#timePickerSample_menuItem5.enyo-tool-decorator</td>
+	<td></td>
+</tr>
+<!--1. Get Times-->
+<tr>
+	<td>clickAt</td>
+	<td>id=timePickerSample_button</td>
+	<td></td>
+</tr>
+<!--1.1 Verify "TIME" pickers are displayed as same as the "VALUE"-->
+<tr>
+	<td>storeText</td>
+	<td>css=#timePickerSample_timePicker1_hourPickerButton.enyo-tool-decorator</td>
+	<td>varHour1</td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>css=#timePickerSample_timePicker1_minutePickerButton.enyo-tool-decorator</td>
+	<td>varMinute1</td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>css=#timePickerSample_timePicker1_ampmPickerButton.enyo-tool-decorator</td>
+	<td>varAMPM1</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#timePickerSample_timePicker1Value</td>
+	<td>${varHour1}:${varMinute1} ${varAMPM1}</td>
+</tr>
+<!--1.2 Change "TIME"-->
+<!--1.2.1 set hour to "1"-->
+<tr>
+	<td>clickAt</td>
+	<td>id=timePickerSample_timePicker1_hourPickerButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>css=#timePickerSample_timePicker1_hourPicker_menuItem.enyo-tool-decorator</td>
+	<td></td>
+</tr>
+<!--1.2.2 set minute to "00"-->
+<tr>
+	<td>clickAt</td>
+	<td>id=timePickerSample_timePicker1_minutePickerButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>css=#timePickerSample_timePicker1_minutePicker_menuItem.enyo-tool-decorator</td>
+	<td></td>
+</tr>
+<!--1.2.3 set AM/PM to "AM"-->
+<tr>
+	<td>clickAt</td>
+	<td>id=timePickerSample_timePicker1_ampmPickerButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>css=#timePickerSample_timePicker1_ampmPicker_menuItem.enyo-tool-decorator</td>
+	<td></td>
+</tr>
+<!--1.2.3 Verify time change-->
+<tr>
+	<td>verifyText</td>
+	<td>css=#timePickerSample_timePicker1Value</td>
+	<td>1:00 AM</td>
+</tr>
+<!--2. Reset Times-->
+<tr>
+	<td>clickAt</td>
+	<td>id=timePickerSample_button2</td>
+	<td></td>
+</tr>
+<!--2.1 Verify "TIME" pickers have been changed back-->
+<!--2.1.1  hour-->
+<tr>
+	<td>verifyText</td>
+	<td>css=#timePickerSample_timePicker1_hourPickerButton.enyo-tool-decorator</td>
+	<td>${varHour1}</td>
+</tr>
+<!--2.1.2 minute-->
+<tr>
+	<td>verifyText</td>
+	<td>css=#timePickerSample_timePicker1_minutePickerButton.enyo-tool-decorator</td>
+	<td>${varMinute1}</td>
+</tr>
+<!--2.1.3 AM/PM-->
+<tr>
+	<td>verifyText</td>
+	<td>css=#timePickerSample_timePicker1_ampmPickerButton.enyo-tool-decorator</td>
+	<td>${varAMPM1}</td>
+</tr>
+<!--2.1.4 VALUE-->
+<tr>
+	<td>verifyText</td>
+	<td>css=#timePickerSample_timePicker1Value</td>
+	<td>${varHour1}:${varMinute1} ${varAMPM1}</td>
+</tr>
+<!--\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+<!--3. Repeat step 1 and 2 for "TIME 24 HOUR MODE"-->
+<!--3.1. Get Times-->
+<tr>
+	<td>clickAt</td>
+	<td>id=timePickerSample_button</td>
+	<td></td>
+</tr>
+<!--3.1.1 Verify "TIME" pickers are displayed as same as the "VALUE"-->
+<tr>
+	<td>storeText</td>
+	<td>css=#timePickerSample_timePicker2_hourPickerButton.enyo-tool-decorator</td>
+	<td>varHour2</td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>css=#timePickerSample_timePicker2_minutePickerButton.enyo-tool-decorator</td>
+	<td>varMinute2</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#timePickerSample_timePicker2Value</td>
+	<td>${varHour2}:${varMinute2}</td>
+</tr>
+<!--3.2 Change "TIME"-->
+<!--3.2.1 set hour to "23"-->
+<tr>
+	<td>clickAt</td>
+	<td>id=timePickerSample_timePicker2_hourPickerButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>css=#timePickerSample_timePicker2_hourPicker_menuItem24.enyo-tool-decorator</td>
+	<td></td>
+</tr>
+<!--3.2.2 set minute to "59"-->
+<tr>
+	<td>clickAt</td>
+	<td>id=timePickerSample_timePicker2_minutePickerButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>css=#timePickerSample_timePicker2_minutePicker_menuItem60.enyo-tool-decorator</td>
+	<td></td>
+</tr>
+<!--3.2.3 Verify time change-->
+<tr>
+	<td>verifyText</td>
+	<td>css=#timePickerSample_timePicker2Value</td>
+	<td>23:59</td>
+</tr>
+<!--4. Reset Times-->
+<tr>
+	<td>clickAt</td>
+	<td>id=timePickerSample_button2</td>
+	<td></td>
+</tr>
+<!--4.1 Verify "TIME" pickers have been changed back-->
+<!--4.1.1  hour-->
+<tr>
+	<td>verifyText</td>
+	<td>css=#timePickerSample_timePicker2_hourPickerButton.enyo-tool-decorator</td>
+	<td>${varHour2}</td>
+</tr>
+<!--4.1.2 minute-->
+<tr>
+	<td>verifyText</td>
+	<td>css=#timePickerSample_timePicker2_minutePickerButton.enyo-tool-decorator</td>
+	<td>${varMinute2}</td>
+</tr>
+<!--4.1.3 VALUE-->
+<tr>
+	<td>verifyText</td>
+	<td>css=#timePickerSample_timePicker2Value</td>
+	<td>${varHour2}:${varMinute2}</td>
+</tr>
+<!--///////////////////////////////////////////////////////-->
+<!--5. Test the "DISABLED" time picker-->
+<tr>
+	<td>verifyText</td>
+	<td>css=#timePickerSample_timePicker3_hourPickerButton.enyo-tool-decorator</td>
+	<td>${varHour1}</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#timePickerSample_timePicker3_minutePickerButton.enyo-tool-decorator</td>
+	<td>${varMinute1}</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#timePickerSample_timePicker3_ampmPickerButton.enyo-tool-decorator</td>
+	<td>${varAMPM1}</td>
+</tr>
+<tr>
+	<td>verifyNotEditable</td>
+	<td>css=#timePickerSample_timePicker3_hourPickerButton.enyo-tool-decorator</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotEditable</td>
+	<td>css=#timePickerSample_timePicker3_minutePickerButton.enyo-tool-decorator</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotEditable</td>
+	<td>css=#timePickerSample_timePicker3_ampmPickerButton.enyo-tool-decorator</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
