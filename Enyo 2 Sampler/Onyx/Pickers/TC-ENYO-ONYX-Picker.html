@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://nightly.enyojs.com/" />
+<title>TC-ENYO-ONYX-Picker</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">TC-ENYO-ONYX-Picker</td></tr>
+</thead><tbody>
+<!--TC-ENYO-ONYX-Picker-->
+<!--Author: Sharon Tong-->
+<!--Date: 2012/11/09-->
+<!--Version: 0.1-->
+<!--Purpose: To test the picker is working correctly.-->
+<!--///////////////////////////////////////////////////-->
+<tr>
+	<td>open</td>
+	<td>/latest/sampler/lib/onyx/samples/PickerSample.html</td>
+	<td></td>
+</tr>
+<!--1. Test the DEFAULT PICKER-->
+<tr>
+	<td>clickAt</td>
+	<td>id=pickerSample_pickerButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=pickerSample_menuItem</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=pickerSample_pickerSelection</td>
+	<td>Gmail</td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=pickerSample_pickerButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=pickerSample_menuItem2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=pickerSample_pickerSelection</td>
+	<td>Yahoo</td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=pickerSample_pickerButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=pickerSample_menuItem4</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=pickerSample_pickerSelection</td>
+	<td>Hotmail</td>
+</tr>
+<!--2. Test the PICKER WITH STATIC BUTTON-->
+<tr>
+	<td>clickAt</td>
+	<td>id=pickerSample_pickerButton2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=pickerSample_menuItem5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=pickerSample_pickerSelection</td>
+	<td>Hello!</td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=pickerSample_pickerButton2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=pickerSample_menuItem6</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=pickerSample_pickerSelection</td>
+	<td>I am busy.</td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=pickerSample_pickerButton2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=pickerSample_menuItem7</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=pickerSample_pickerSelection</td>
+	<td>Good Bye.</td>
+</tr>
+<!--3. Test OTHER PICKERS-->
+<tr>
+	<td>clickAt</td>
+	<td>id=pickerSample_pickerButton3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=pickerSample_integerPicker_menuItem</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=pickerSample_pickerSelection</td>
+	<td>0</td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=pickerSample_pickerButton3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=pickerSample_integerPicker_menuItem3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=pickerSample_pickerSelection</td>
+	<td>2</td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=pickerSample_pickerButton3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=pickerSample_integerPicker_menuItem6</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=pickerSample_pickerSelection</td>
+	<td>5</td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=pickerSample_pickerButton3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=pickerSample_integerPicker_menuItem10</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=pickerSample_pickerSelection</td>
+	<td>9</td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=pickerSample_pickerButton4</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=pickerSample_monthPicker_menuItem8</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=pickerSample_pickerSelection</td>
+	<td>AUG</td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=pickerSample_pickerButton4</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=pickerSample_monthPicker_menuItem10</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=pickerSample_pickerSelection</td>
+	<td>OCT</td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=pickerSample_pickerButton5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=pickerSample_dayPicker_menuItem11</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=pickerSample_pickerSelection</td>
+	<td>11</td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=pickerSample_pickerButton5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=pickerSample_dayPicker_menuItem15</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=pickerSample_pickerSelection</td>
+	<td>15</td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=pickerSample_pickerButton6</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//*[@data-enyo-index=&quot;115&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=pickerSample_pickerSelection</td>
+	<td>2015</td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=pickerSample_pickerButton7</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>css=#pickerSample_menuItem8.enyo-tool-decorator</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=pickerSample_pickerSelection</td>
+	<td>Gmail</td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=pickerSample_pickerButton7</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>css=#pickerSample_menuItem10.enyo-tool-decorator</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=pickerSample_pickerSelection</td>
+	<td>Outlook</td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=pickerSample_pickerButton7</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>css=#pickerSample_menuItem11.enyo-tool-decorator</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=pickerSample_pickerSelection</td>
+	<td>Hotmail</td>
+</tr>
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://nightly.enyojs.com/" />
+<title>TC-ENYO-ONYX-Checkboxes</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">TC-ENYO-ONYX-Checkboxes</td></tr>
+</thead><tbody>
+<!--TC-ENYO-ONYX-Check Boxes-->
+<!--Author: Sharon Tong-->
+<!--Date: 2012/11/09-->
+<!--Version: 0.1-->
+<!--Purpose: To test if the check boxes work fine-->
+<!--///////////////////////////////////////////////////-->
+<tr>
+	<td>open</td>
+	<td>/latest/sampler/lib/onyx/samples/CheckboxSample.html</td>
+	<td></td>
+</tr>
+<!--1. Test the CHECKBOXES-->
+<tr>
+	<td>clickAt</td>
+	<td>id=checkboxSample_checkbox</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=checkboxSample_result</td>
+	<td>checkbox was selected.</td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=checkboxSample_checkbox2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=checkboxSample_result</td>
+	<td>checkbox2 was selected.</td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=checkboxSample_checkbox3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=checkboxSample_result</td>
+	<td>checkbox3 was deselected.</td>
+</tr>
+<!--2. Test the CHECKBOXES GROUP-->
+<tr>
+	<td>clickAt</td>
+	<td>id=checkboxSample_checkbox4</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=checkboxSample_result</td>
+	<td>The 1st checkbox in the group is selected.</td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=checkboxSample_checkbox5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=checkboxSample_result</td>
+	<td>The 2nd checkbox in the group is selected.</td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=checkboxSample_checkbox6</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=checkboxSample_result</td>
+	<td>The 3rd checkbox in the group is selected.</td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://nightly.enyojs.com/" />
+<title>TC-ENYO-LAYOUT-PANELS-ARRANGER SAMPLE-CollapsingArranger</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">TC-ENYO-LAYOUT-PANELS-ARRANGER SAMPLE-CollapsingArranger</td></tr>
+</thead><tbody>
+<!--TC-ENYO-LAYOUT-PANELS-ARRANGER SAMPLE-CollapsingArranger-->
+<!--Purpose: CollapsingArranger test-->
+<!--Author: Gordon Cheng-->
+<!--Version: 0.1-->
+<!--Date: 11/14/2012-->
+<!--\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+<tr>
+	<td>open</td>
+	<td>/latest/sampler/lib/layout/panels/samples/PanelsSample.html</td>
+	<td></td>
+</tr>
+<!--CollapsingArranger-->
+<tr>
+	<td>clickAt</td>
+	<td>id=panelsSample_button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=panelsSample_arrangerPicker_menuItem4</td>
+	<td></td>
+</tr>
+<!--"red" panel is present-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=panelsSample_control2</td>
+	<td></td>
+</tr>
+<!--Click "Next"-->
+<tr>
+	<td>clickAt</td>
+	<td>id=panelsSample_button3</td>
+	<td></td>
+</tr>
+<!--"orange" panel is present-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=panelsSample_control3</td>
+	<td></td>
+</tr>
+<!--Click "Next" again-->
+<tr>
+	<td>clickAt</td>
+	<td>id=panelsSample_button3</td>
+	<td></td>
+</tr>
+<!--"yellow" panel is present-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=panelsSample_control4</td>
+	<td></td>
+</tr>
+<!--Click "Next" again-->
+<tr>
+	<td>clickAt</td>
+	<td>id=panelsSample_button3</td>
+	<td></td>
+</tr>
+<!--"green" panel is present-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=panelsSample_control5</td>
+	<td></td>
+</tr>
+<!--Click "Next" again-->
+<tr>
+	<td>clickAt</td>
+	<td>id=panelsSample_button3</td>
+	<td></td>
+</tr>
+<!--"blue" panel is present-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=panelsSample_control6</td>
+	<td></td>
+</tr>
+<!--Click "Next" again-->
+<tr>
+	<td>clickAt</td>
+	<td>id=panelsSample_button3</td>
+	<td></td>
+</tr>
+<!--"indigo" panel is present-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=panelsSample_control7</td>
+	<td></td>
+</tr>
+<!--Click "Next" again-->
+<tr>
+	<td>clickAt</td>
+	<td>id=panelsSample_button3</td>
+	<td></td>
+</tr>
+<!--"violet" panel is present-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=panelsSample_control8</td>
+	<td></td>
+</tr>
+<!--//////////////////////////////-->
+<!--Click "Previous"-->
+<tr>
+	<td>clickAt</td>
+	<td>id=panelsSample_button2</td>
+	<td></td>
+</tr>
+<!--"indigo" panel is present-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=panelsSample_control7</td>
+	<td></td>
+</tr>
+<!--Click "Previous" again-->
+<tr>
+	<td>clickAt</td>
+	<td>id=panelsSample_button2</td>
+	<td></td>
+</tr>
+<!--"blue" panel is present-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=panelsSample_control6</td>
+	<td></td>
+</tr>
+<!--Click "Previous" again-->
+<tr>
+	<td>clickAt</td>
+	<td>id=panelsSample_button2</td>
+	<td></td>
+</tr>
+<!--"green" panel is present-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=panelsSample_control5</td>
+	<td></td>
+</tr>
+<!--Click "Previous" again-->
+<tr>
+	<td>clickAt</td>
+	<td>id=panelsSample_button2</td>
+	<td></td>
+</tr>
+<!--"yellow" panel is present-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=panelsSample_control4</td>
+	<td></td>
+</tr>
+<!--Click "Previous" again-->
+<tr>
+	<td>clickAt</td>
+	<td>id=panelsSample_button2</td>
+	<td></td>
+</tr>
+<!--"orange" panel is present-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=panelsSample_control3</td>
+	<td></td>
+</tr>
+<!--Click "Previous" again-->
+<tr>
+	<td>clickAt</td>
+	<td>id=panelsSample_button2</td>
+	<td></td>
+</tr>
+<!--"red" panel is present-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=panelsSample_control2</td>
+	<td></td>
+</tr>
+<!--Directly jump to 5: "indigo" panel-->
+<tr>
+	<td>type</td>
+	<td>id=panelsSample_input</td>
+	<td>5</td>
+</tr>
+<!--Click "Go"-->
+<tr>
+	<td>clickAt</td>
+	<td>id=panelsSample_button4</td>
+	<td></td>
+</tr>
+<!--"indigo" panel is present-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=panelsSample_control7</td>
+	<td></td>
+</tr>
+<!--Directly jump to 0: "red" panel-->
+<tr>
+	<td>type</td>
+	<td>id=panelsSample_input</td>
+	<td>0</td>
+</tr>
+<!--Click "Go"-->
+<tr>
+	<td>clickAt</td>
+	<td>id=panelsSample_button4</td>
+	<td></td>
+</tr>
+<!--"red" panel is present-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=panelsSample_control2</td>
+	<td></td>
+</tr>
+<!--Click "Add"-->
+<tr>
+	<td>clickAt</td>
+	<td>id=panelsSample_button5</td>
+	<td></td>
+</tr>
+<!--New panel is present-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=panelsSample_samplePanels_control</td>
+	<td></td>
+</tr>
+<!--Click "Add" again-->
+<tr>
+	<td>clickAt</td>
+	<td>id=panelsSample_button5</td>
+	<td></td>
+</tr>
+<!--Another new panel is present-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=panelsSample_samplePanels_control2</td>
+	<td></td>
+</tr>
+<!--Click "Delete"-->
+<tr>
+	<td>clickAt</td>
+	<td>id=panelsSample_button6</td>
+	<td></td>
+</tr>
+<!--The current is removed-->
+<tr>
+	<td>verifyElementNotPresent</td>
+	<td>id=panelsSample_samplePanels_control2</td>
+	<td></td>
+</tr>
+<!--Click "Delete" again-->
+<tr>
+	<td>clickAt</td>
+	<td>id=panelsSample_button6</td>
+	<td></td>
+</tr>
+<!--The current panel is removed-->
+<tr>
+	<td>verifyElementNotPresent</td>
+	<td>id=panelsSample_samplePanels_control</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://nightly.enyojs.com/" />
+<title>TC-ENYO-Enyo Core-Scroller</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">TC-ENYO-Enyo Core-Scroller</td></tr>
+</thead><tbody>
+<!--TC-ENYO-Enyo Core-Scroller-->
+<!--Author: Gordon Cheng-->
+<!--Version: 0.1-->
+<!--11/9/2012-->
+<!--////////////////////////////////////////////////-->
+<tr>
+	<td>open</td>
+	<td>/latest/sampler/build/samples/ScrollerSample.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<!--1. Default scroller-->
+<!--1.1 Scroll to the most left.-->
+<tr>
+	<td>runScript</td>
+	<td>window.document.getElementById('app_sampleContent_scrollerSample_scroller').scrollLeft=0;</td>
+	<td></td>
+</tr>
+<!--1.2 Scroll to the most right.-->
+<tr>
+	<td>runScript</td>
+	<td>window.document.getElementById('app_sampleContent_scrollerSample_scroller').scrollLeft=10000;</td>
+	<td></td>
+</tr>
+<!--1.3 Scroll to the bottom.-->
+<tr>
+	<td>runScript</td>
+	<td>window.document.getElementById('app_sampleContent_scrollerSample_scroller').scrollTop=10000;</td>
+	<td></td>
+</tr>
+<!--1.4 Scroll to the top.-->
+<tr>
+	<td>runScript</td>
+	<td>window.document.getElementById('app_sampleContent_scrollerSample_scroller').scrollTop=0;</td>
+	<td></td>
+</tr>
+<!--\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+<!--2. Force touch scroller-->
+<tr>
+	<td>click</td>
+	<td>id=app_sampleContent_scrollerSample_pickerButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=app_sampleContent_scrollerSample_menuItem2</td>
+	<td></td>
+</tr>
+<!--2.1 Scroll to the most left.-->
+<tr>
+	<td>runScript</td>
+	<td>window.document.getElementById('app_sampleContent_scrollerSample_scroller2_strategy_client').scrollLeft=0;</td>
+	<td></td>
+</tr>
+<!--2.2 Scroll to the most right.-->
+<tr>
+	<td>runScript</td>
+	<td>window.document.getElementById('app_sampleContent_scrollerSample_scroller2_strategy_client').scrollLeft=10000;</td>
+	<td></td>
+</tr>
+<!--2.3 Scroll to the bottom.-->
+<tr>
+	<td>runScript</td>
+	<td>window.document.getElementById('app_sampleContent_scrollerSample_scroller2_strategy_client').scrollTop=10000;</td>
+	<td></td>
+</tr>
+<!--2.4 Scroll to the top.-->
+<tr>
+	<td>runScript</td>
+	<td>window.document.getElementById('app_sampleContent_scrollerSample_scroller2_strategy_client').scrollTop=0;</td>
+	<td></td>
+</tr>
+<!--///////////////////////////////////////////////-->
+<!--3. Horizontal only-->
+<tr>
+	<td>click</td>
+	<td>id=app_sampleContent_scrollerSample_pickerButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=app_sampleContent_scrollerSample_menuItem3</td>
+	<td></td>
+</tr>
+<!--3.1 Scroll to the most left.-->
+<tr>
+	<td>runScript</td>
+	<td>window.document.getElementById('app_sampleContent_scrollerSample_scroller3').scrollLeft=0;</td>
+	<td></td>
+</tr>
+<!--3.2 Scroll to the most right.-->
+<tr>
+	<td>runScript</td>
+	<td>window.document.getElementById('app_sampleContent_scrollerSample_scroller3').scrollLeft=10000;</td>
+	<td></td>
+</tr>
+<!--\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+<!--4. Vertical only-->
+<tr>
+	<td>click</td>
+	<td>id=app_sampleContent_scrollerSample_pickerButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=app_sampleContent_scrollerSample_menuItem4</td>
+	<td></td>
+</tr>
+<!--4.1 Scroll to the bottom.-->
+<tr>
+	<td>runScript</td>
+	<td>window.document.getElementById('app_sampleContent_scrollerSample_scroller4').scrollTop=10000;</td>
+	<td></td>
+</tr>
+<!--4.2 Scroll to the top.-->
+<tr>
+	<td>runScript</td>
+	<td>window.document.getElementById('app_sampleContent_scrollerSample_scroller4').scrollTop=0;</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

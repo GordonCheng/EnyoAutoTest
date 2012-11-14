@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://nightly.enyojs.com/" />
+<title>TC-ENYO-Layout-Tree</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">TC-ENYO-Layout-Tree</td></tr>
+</thead><tbody>
+<!--TC-ENYO-ONYX-Tree-->
+<!--Author: Sharon Tong-->
+<!--Date: 2012/11/09-->
+<!--Version: 0.1-->
+<!--Purpose: To test if the tree can be expanded or unexpanded correctly-->
+<!--///////////////////////////////////////////////////-->
+<tr>
+	<td>open</td>
+	<td>/latest/sampler/lib/layout/tree/samples/TreeSample.html</td>
+	<td></td>
+</tr>
+<!--1. Unexpand the father tree node: Bravo-->
+<tr>
+	<td>clickAt</td>
+	<td>id=treeSample_node3_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPositionTop</td>
+	<td>id=treeSample_node4_caption</td>
+	<td>0</td>
+</tr>
+<!--2. Unexpand the father tree node: Delta-->
+<tr>
+	<td>clickAt</td>
+	<td>id=treeSample_node11_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPositionTop</td>
+	<td>id=treeSample_node13_caption</td>
+	<td>84</td>
+</tr>
+<!--3. Expand the father tree node: Charlie-->
+<tr>
+	<td>clickAt</td>
+	<td>id=treeSample_node7_icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPositionTop</td>
+	<td>id=treeSample_node10_caption</td>
+	<td>168</td>
+</tr>
+</tbody></table>
+</body>
+</html>

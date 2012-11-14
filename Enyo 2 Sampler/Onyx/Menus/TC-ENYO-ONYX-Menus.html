@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://nightly.enyojs.com/" />
+<title>TC-ENYO-ONYX-Menus</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">TC-ENYO-ONYX-Menus</td></tr>
+</thead><tbody>
+<!--TC-ENYO-ONYX-Menus-->
+<!--Author: Sharon Tong-->
+<!--Date: 2012/11/09-->
+<!--Version: 0.1-->
+<!--Purpose: To test if menu functionality works fine-->
+<!--///////////////////////////////////////////////////-->
+<tr>
+	<td>open</td>
+	<td>/latest/sampler/lib/onyx/samples/MenuSample.html</td>
+	<td></td>
+</tr>
+<!--1. Test the MENUS IN TOOLBARS-->
+<!--1.1 Icon Button menu-->
+<tr>
+	<td>clickAt</td>
+	<td>id=menuSample_iconButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=menuSample_control2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=menuSample_menuSelection</td>
+	<td>Bookmarks Selected</td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=menuSample_menuItem2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=menuSample_menuSelection</td>
+	<td>Favorites Selected</td>
+</tr>
+<!--1.2 Bookmarks menu-->
+<tr>
+	<td>clickAt</td>
+	<td>id=menuSample_button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=menuSample_menuItem8</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=menuSample_menuSelection</td>
+	<td>Recents Selected</td>
+</tr>
+<!--2. Test the MENUS FROM BUTTONS-->
+<!--2.1 Popup menu (floating)-->
+<tr>
+	<td>clickAt</td>
+	<td>id=menuSample_button2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=menuSample_menuItem9</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=menuSample_menuSelection</td>
+	<td>1 Selected</td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=menuSample_button2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=menuSample_menuItem12</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=menuSample_menuSelection</td>
+	<td>3 Selected</td>
+</tr>
+<!--2.2 Scrolling Popup menu-->
+<tr>
+	<td>clickAt</td>
+	<td>id=menuSample_button3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=menuSample_menuItem13</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=menuSample_menuSelection</td>
+	<td>1 Selected</td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=menuSample_button3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=menuSample_menuItem16</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=menuSample_menuSelection</td>
+	<td>3 Selected</td>
+</tr>
+<!--2.3 Split Popup menu-->
+<tr>
+	<td>clickAt</td>
+	<td>id=menuSample_button5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=menuSample_menuItem22</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=menuSample_menuSelection</td>
+	<td>1 Selected</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=menuSample_button5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=menuSample_menuItem23</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=menuSample_menuSelection</td>
+	<td>2 Selected</td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

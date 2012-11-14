@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://nightly.enyojs.com/" />
+<title>TC-ENYO-ONYX-Drawer</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">TC-ENYO-ONYX-Drawer</td></tr>
+</thead><tbody>
+<!--TC-ENYO-ONYX-Drawer-->
+<!--Author: Sharon Tong-->
+<!--Date: 2012/11/12-->
+<!--Version: 0.1-->
+<!--Purpose: To test if the drawer works fine-->
+<!--///////////////////////////////////////////////////-->
+<tr>
+	<td>open</td>
+	<td>/latest/sampler/lib/onyx/samples/DrawerSample.html</td>
+	<td></td>
+</tr>
+<!--1. Test the Activate(V) -->
+<tr>
+	<td>clickAt</td>
+	<td>id=drawerSample_control2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=drawerSample_control3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=drawerSample_control5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=drawerSample_control7</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=drawerSample_control8</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=drawerSample_control2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=drawerSample_control3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=drawerSample_control5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=drawerSample_control7</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=drawerSample_control8</td>
+	<td></td>
+</tr>
+<!--2. Test the Activate (V) (Toggled Animation)-->
+<tr>
+	<td>clickAt</td>
+	<td>id=drawerSample_control6</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=drawerSample_control7</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=drawerSample_control6</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=drawerSample_control7</td>
+	<td></td>
+</tr>
+<!--3. Test the Active (H) -->
+<tr>
+	<td>clickAt</td>
+	<td>id=drawerSample_control10</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=drawerSample_control11</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=drawerSample_control10</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=drawerSample_control11</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

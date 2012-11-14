@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://nightly.enyojs.com/" />
+<title>TC-ENYO-ONYX-Tooltips</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">TC-ENYO-ONYX-Tooltips</td></tr>
+</thead><tbody>
+<!--TC-ENYO-ONYX-Tooltip-->
+<!--Author: Sharon Tong-->
+<!--Date: 2012/11/12-->
+<!--Version: 0.1-->
+<!--Purpose: To test if the tooltip works fine-->
+<!--///////////////////////////////////////////////////-->
+<tr>
+	<td>open</td>
+	<td>/latest/sampler/lib/onyx/samples/TooltipSample.html</td>
+	<td></td>
+</tr>
+<!--1. TOOLTIPS ON TOOLBAR-->
+<tr>
+	<td>mouseOver</td>
+	<td>id=tooltipSample_button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=tooltipSample_tooltip</td>
+	<td>I'm a tooltip for a button.</td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>id=tooltipSample_input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=tooltipSample_tooltip2</td>
+	<td>I'm a tooltip for an input.</td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>id=tooltipSample_iconButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=tooltipSample_tooltip3</td>
+	<td>Bookmarks menu</td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>id=tooltipSample_button2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=tooltipSample_tooltip4</td>
+	<td>Tap to open...</td>
+</tr>
+<!--2. TOOLTIPS ON ITEMS-->
+<tr>
+	<td>mouseOver</td>
+	<td>id=tooltipSample_button3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=tooltipSample_tooltip5</td>
+	<td>I'm a tooltip for a button.</td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>id=tooltipSample_input2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=tooltipSample_tooltip6</td>
+	<td>I'm a tooltip for an input.</td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>id=tooltipSample_iconButton4</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=tooltipSample_tooltip7</td>
+	<td>Bookmarks menu</td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>id=tooltipSample_button4</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=tooltipSample_tooltip8</td>
+	<td>Tap to open...</td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

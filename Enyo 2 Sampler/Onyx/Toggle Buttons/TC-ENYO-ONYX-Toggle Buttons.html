@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://nightly.enyojs.com/" />
+<title>TC-ENYO-ONYX-Toggle Buttons</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">TC-ENYO-ONYX-Toggle Buttons</td></tr>
+</thead><tbody>
+<!--TC-ENYO-ONYX-Toggle Buttons-->
+<!--Author: Sharon Tong-->
+<!--Date: 2012/11/09-->
+<!--Version: 0.1-->
+<!--Purpose: To test if the Toggle buttons work fine-->
+<!--///////////////////////////////////////////////////-->
+<tr>
+	<td>open</td>
+	<td>/latest/sampler/lib/onyx/samples/ToggleButtonSample.html</td>
+	<td></td>
+</tr>
+<!--1. Test the TOGGLE BUTTONS-->
+<tr>
+	<td>clickAt</td>
+	<td>id=toggleButtonSample_toggleButton_control</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=toggleButtonSample_result</td>
+	<td>toggleButton was deselected.</td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=toggleButtonSample_toggleButton2_contentOn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=toggleButtonSample_result</td>
+	<td>toggleButton2 was selected.</td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=toggleButtonSample_toggleButton3_contentOn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=toggleButtonSample_result</td>
+	<td>toggleButton3 was selected.</td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=toggleButtonSample_toggleButton4_contentOn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=toggleButtonSample_result</td>
+	<td>toggleButton3 was selected.</td>
+</tr>
+<!--2. Test the TOGGLE BUTTONS GROUP-->
+<tr>
+	<td>clickAt</td>
+	<td>id=toggleButtonSample_toggleButton5_contentOff</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=toggleButtonSample_result</td>
+	<td>The 1st toggle button in the group is selected.</td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=toggleButtonSample_toggleButton6_contentOff</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=toggleButtonSample_result</td>
+	<td>The 2nd toggle button in the group is selected.</td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=toggleButtonSample_toggleButton7_contentOn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=toggleButtonSample_result</td>
+	<td>The 3rd toggle button in the group is selected.</td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

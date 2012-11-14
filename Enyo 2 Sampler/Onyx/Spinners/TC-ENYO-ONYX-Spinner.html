@@ -4,37 +4,47 @@
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="selenium.base" href="http://nightly.enyojs.com/" />
-<title>TC-ENYO-Enyo Core-Fittable Layouts-Example layout 3</title>
+<title>TC-ENYO-ONYX-Spinner</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">TC-ENYO-Enyo Core-Fittable Layouts-Example layout 3</td></tr>
+<tr><td rowspan="1" colspan="3">TC-ENYO-ONYX-Spinner</td></tr>
 </thead><tbody>
-<!--TC-ENYO-Layout-Fittable Layouts-Example layout 3-->
+<!--TC-ENYO-ONYX-Spinner-->
 <!--Author: Sharon Tong-->
-<!--Date: 2012/10/31-->
+<!--Date: 2012/11/12-->
 <!--Version: 0.1-->
-<!--Purpose: To test if the Example app layout 3 shows correctly-->
+<!--Purpose: To test if the spinner works fine-->
 <!--///////////////////////////////////////////////////-->
 <tr>
 	<td>open</td>
-	<td>/latest/sampler/lib/layout/fittable/samples/FittableAppLayout3.html</td>
+	<td>/latest/sampler/lib/onyx/samples/SpinnerSample.html</td>
 	<td></td>
 </tr>
-<!--1. To test the "1" button-->
+<!--1. LIGHT SPINNER-->
 <tr>
-	<td>click</td>
-	<td>id=fittableAppLayout3_button</td>
-	<td></td>
+	<td>verifyText</td>
+	<td>id=spinnerSample_control</td>
+	<td>Light Spinner</td>
 </tr>
-<!--2. To test the "2" button-->
 <tr>
-	<td>click</td>
-	<td>id=fittableAppLayout3_button2</td>
+	<td>verifyText</td>
+	<td>id=spinnerSample_spinner</td>
 	<td></td>
 </tr>
-<!--Need to use captureEntirePageScreenshot to check the layout in the future-->
+<!--2. DARK SPINNER-->
+<tr>
+	<td>verifyText</td>
+	<td>id=spinnerSample_control4</td>
+	<td>Dark Spinner</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=spinnerSample_spinner2</td>
+	<td></td>
+</tr>
+
 </tbody></table>
 </body>
 </html>

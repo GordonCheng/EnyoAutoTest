@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://nightly.enyojs.com/" />
+<title>TC-ENYO-ONYX-Progress Bars</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">TC-ENYO-ONYX-Progress Bars</td></tr>
+</thead><tbody>
+<!--TC-ENYO-ONYX-Progress Bars-->
+<!--Author: Sharon Tong-->
+<!--Date: 2012/11/13-->
+<!--Version: 0.1-->
+<!--Purpose: To test if the progress bars act as expected-->
+<!--///////////////////////////////////////////////////-->
+<tr>
+	<td>open</td>
+	<td>/latest/sampler/lib/onyx/samples/ProgressSample.html</td>
+	<td></td>
+</tr>
+<!--1. To set the value and click 'Set' button and see if all kinds of progress bars are moved to 10-->
+<tr>
+	<td>type</td>
+	<td>id=progressSample_input</td>
+	<td>10</td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=progressSample_button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementWidth</td>
+	<td>id=progressSample_progressBar_bar</td>
+	<td>185</td>
+</tr>
+<tr>
+	<td>verifyElementWidth</td>
+	<td>id=progressSample_progressBar2_bar</td>
+	<td>185</td>
+</tr>
+<tr>
+	<td>verifyElementWidth</td>
+	<td>id=progressSample_progressBar3_bar</td>
+	<td>185</td>
+</tr>
+<tr>
+	<td>verifyElementWidth</td>
+	<td>id=progressSample_progressBar4_bar</td>
+	<td>185</td>
+</tr>
+<tr>
+	<td>verifyElementWidth</td>
+	<td>id=progressSample_progressBar5_bar</td>
+	<td>185</td>
+</tr>
+<tr>
+	<td>verifyElementWidth</td>
+	<td>id=progressSample_progressBar6_bar</td>
+	<td>185</td>
+</tr>
+<tr>
+	<td>verifyElementWidth</td>
+	<td>id=progressSample_progressBar7_bar</td>
+	<td>185</td>
+</tr>
+<tr>
+	<td>verifyElementWidth</td>
+	<td>id=progressSample_progressButton_bar</td>
+	<td>185</td>
+</tr>
+<tr>
+	<td>verifyElementWidth</td>
+	<td>id=progressSample_progressButton2_bar</td>
+	<td>185</td>
+</tr>
+<tr>
+	<td>verifyElementWidth</td>
+	<td>id=progressSample_progressButton3_bar</td>
+	<td>185</td>
+</tr>
+<!--2. To click the '+' button and see if the progress bars move to 20-->
+<tr>
+	<td>clickAt</td>
+	<td>id=progressSample_button3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementWidth</td>
+	<td>id=progressSample_progressBar_bar</td>
+	<td>370</td>
+</tr>
+<tr>
+	<td>verifyElementWidth</td>
+	<td>id=progressSample_progressBar2_bar</td>
+	<td>370</td>
+</tr>
+<tr>
+	<td>verifyElementWidth</td>
+	<td>id=progressSample_progressBar3_bar</td>
+	<td>370</td>
+</tr>
+<tr>
+	<td>verifyElementWidth</td>
+	<td>id=progressSample_progressBar4_bar</td>
+	<td>370</td>
+</tr>
+<tr>
+	<td>verifyElementWidth</td>
+	<td>id=progressSample_progressBar5_bar</td>
+	<td>370</td>
+</tr>
+<tr>
+	<td>verifyElementWidth</td>
+	<td>id=progressSample_progressBar6_bar</td>
+	<td>370</td>
+</tr>
+<tr>
+	<td>verifyElementWidth</td>
+	<td>id=progressSample_progressBar7_bar</td>
+	<td>370</td>
+</tr>
+<tr>
+	<td>verifyElementWidth</td>
+	<td>id=progressSample_progressButton_bar</td>
+	<td>370</td>
+</tr>
+<tr>
+	<td>verifyElementWidth</td>
+	<td>id=progressSample_progressButton2_bar</td>
+	<td>370</td>
+</tr>
+<tr>
+	<td>verifyElementWidth</td>
+	<td>id=progressSample_progressButton3_bar</td>
+	<td>370</td>
+</tr>
+<!--3. To click the '-' button twice and see if the progress bar move to 0-->
+<tr>
+	<td>clickAt</td>
+	<td>id=progressSample_button2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=progressSample_button2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementWidth</td>
+	<td>id=progressSample_progressBar_bar</td>
+	<td>0</td>
+</tr>
+<tr>
+	<td>verifyElementWidth</td>
+	<td>id=progressSample_progressBar2_bar</td>
+	<td>0</td>
+</tr>
+<tr>
+	<td>verifyElementWidth</td>
+	<td>id=progressSample_progressBar3_bar</td>
+	<td>0</td>
+</tr>
+<tr>
+	<td>verifyElementWidth</td>
+	<td>id=progressSample_progressBar4_bar</td>
+	<td>0</td>
+</tr>
+<tr>
+	<td>verifyElementWidth</td>
+	<td>id=progressSample_progressBar5_bar</td>
+	<td>0</td>
+</tr>
+<tr>
+	<td>verifyElementWidth</td>
+	<td>id=progressSample_progressBar6_bar</td>
+	<td>0</td>
+</tr>
+<tr>
+	<td>verifyElementWidth</td>
+	<td>id=progressSample_progressBar7_bar</td>
+	<td>0</td>
+</tr>
+<tr>
+	<td>verifyElementWidth</td>
+	<td>id=progressSample_progressButton_bar</td>
+	<td>0</td>
+</tr>
+<tr>
+	<td>verifyElementWidth</td>
+	<td>id=progressSample_progressButton2_bar</td>
+	<td>0</td>
+</tr>
+<tr>
+	<td>verifyElementWidth</td>
+	<td>id=progressSample_progressButton3_bar</td>
+	<td>0</td>
+</tr>
+<!--4. Move the knob on the bar and see if the width of bar are changed-->
+<tr>
+	<td>verifyElementWidth</td>
+	<td>id=progressSample_slider_bar</td>
+	<td>913</td>
+</tr>
+<tr>
+	<td>mouseDownAt</td>
+	<td>id=progressSample_slider_knob</td>
+	<td>0,0</td>
+</tr>
+<tr>
+	<td>mouseMoveAt</td>
+	<td>id=progressSample_slider_knob</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseUpAt</td>
+	<td>id=progressSample_slider_knob</td>
+	<td>185,0</td>
+</tr>
+<tr>
+	<td>verifyElementWidth</td>
+	<td>id=progressSample_slider_bar</td>
+	<td>1077</td>
+</tr>
+<!--5. Move the knob on the bar and the bar is expected to stay at the original position-->
+<tr>
+	<td>verifyElementWidth</td>
+	<td>id=progressSample_slider2_bar</td>
+	<td>365</td>
+</tr>
+<tr>
+	<td>mouseDownAt</td>
+	<td>id=progressSample_slider2_knob</td>
+	<td>0,0</td>
+</tr>
+<tr>
+	<td>mouseMoveAt</td>
+	<td>id=progressSample_slider2_knob</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseUpAt</td>
+	<td>id=progressSample_slider2_knob</td>
+	<td>200,0</td>
+</tr>
+<!--6. Click the 'Toggle Progress' button and the bar moves, while click the button again the bar stops moving.-->
+<tr>
+	<td>verifyElementWidth</td>
+	<td>id=progressSample_slider2_bar</td>
+	<td>365</td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=progressSample_button4</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=progressSample_button4</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementWidth</td>
+	<td>id=progressSample_progressSlider_bar</td>
+	<td>183</td>
+</tr>
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://nightly.enyojs.com/" />
+<title>TC-ENYO-ONYX-Inputs</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">TC-ENYO-ONYX-Inputs</td></tr>
+</thead><tbody>
+<!--TC-ENYO-ONYX-Inputs-->
+<!--Author: Sharon Tong-->
+<!--Date: 2012/11/09-->
+<!--Version: 0.1-->
+<!--Purpose: To test if all kinds of input work fine-->
+<!--///////////////////////////////////////////////////-->
+<tr>
+	<td>open</td>
+	<td>/latest/sampler/lib/onyx/samples/InputSample.html</td>
+	<td></td>
+</tr>
+<!--1. Test the INPUTS-->
+<!--1.1 Type something into basic input field and verify the result-->
+<tr>
+	<td>type</td>
+	<td>id=inputSample_input</td>
+	<td>test text</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=inputSample_result</td>
+	<td>exact:Input: test text</td>
+</tr>
+<!--1.2 Type something into the search field and verify its result.-->
+<tr>
+	<td>type</td>
+	<td>id=inputSample_input2</td>
+	<td>input something here</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=inputSample_result</td>
+	<td>exact:Input: input something here</td>
+</tr>
+<!--1.3 Type something into the password field and verify its result.-->
+<tr>
+	<td>type</td>
+	<td>id=inputSample_input3</td>
+	<td>abc</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=inputSample_result</td>
+	<td>exact:Input: abc</td>
+</tr>
+<!--1.4 Set the 'alwaysLookFocused' checkbox selected.-->
+<tr>
+	<td>clickAt</td>
+	<td>id=inputSample_checkbox</td>
+	<td></td>
+</tr>
+<!--1.5 Click at the disabled input field-->
+<tr>
+	<td>clickAt</td>
+	<td>id=inputSample_inputDecorator5</td>
+	<td></td>
+</tr>
+<!--1.6 Type something into the left field and verify its result.-->
+<tr>
+	<td>type</td>
+	<td>id=inputSample_input5</td>
+	<td>left part</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=inputSample_result</td>
+	<td>exact:Input: left part</td>
+</tr>
+<!--2 Test the RICHTEXTS-->
+<tr>
+	<td>clickAt</td>
+	<td>id=inputSample_richText</td>
+	<td></td>
+</tr>
+<tr>
+	<td>runScript</td>
+	<td>document.getElementById('inputSample_richText').innerHTML='abcdefghijklmnopqrstuvwxyzabcd'</td>
+	<td></td>
+</tr>
+<tr>
+	<td>runScript</td>
+	<td>document.getElementById('inputSample_richText').onchange = window.enyo.dispatch</td>
+	<td></td>
+</tr>
+<tr>
+	<td>fireEvent</td>
+	<td>id=inputSample_richText</td>
+	<td>change</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=inputSample_result</td>
+	<td>exact:Input: abcdefghijklmnopqrstuvwxyzabcd</td>
+</tr>
+<tr>
+	<td>runScript</td>
+	<td>document.getElementById('inputSample_richText2').innerHTML='abcdefghijklmnopqrstuvwxyzabcd'</td>
+	<td></td>
+</tr>
+<tr>
+	<td>runScript</td>
+	<td>window.document.getElementById('inputSample_richText2').onchange = window.enyo.dispatch</td>
+	<td></td>
+</tr>
+<tr>
+	<td>fireEvent</td>
+	<td>id=inputSample_richText2</td>
+	<td>change</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=inputSample_result</td>
+	<td>exact:Input: abcdefghijklmnopqrstuvwxyzabcd</td>
+</tr>
+<!--3 Test the TEXTAREAS-->
+<tr>
+	<td>clickAt</td>
+	<td>id=inputSample_textArea</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=inputSample_textArea</td>
+	<td>abcdefghigklmnopqrstuvwxyzabcdefghigklmnopqrstuvwxyzabcdefghi</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=inputSample_result</td>
+	<td>exact:Input: abcdefghigklmnopqrstuvwxyzabcdefghigklmnopqrstuvwxyzabcdefghi</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=inputSample_textArea2</td>
+	<td>abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghi</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=inputSample_result</td>
+	<td>exact:Input: abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghi</td>
+</tr>
+</tbody></table>
+</body>
+</html>
